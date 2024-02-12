@@ -2,5 +2,5 @@ using GeoRequestSimulator
 using Test
 
 @testset "GeoRequestSimulator.jl" begin
-    # Write your tests here.
+    @test 1 == 1
 end
