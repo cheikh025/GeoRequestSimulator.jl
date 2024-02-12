@@ -5,5 +5,5 @@ module CppScenario
         script_dir = @__DIR__
         return joinpath(script_dir, "../deps/cpp/build/libGenerateScenario.so")
     end
-    @wrapmodule(get_libGenSC_path)
+    CxxWrap.@wrapmodule(get_libGenSC_path)
 end
