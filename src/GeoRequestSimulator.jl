@@ -2,7 +2,7 @@ module GeoRequestSimulator
 
     include("../deps/build.jl")
     include("utils.jl")
-    using .cppScenario: SCmain
+    using .CppScenario: SCmain
     
 
     export createScenario
