@@ -1,7 +1,6 @@
 module GeoRequestSimulator
 
     include("../deps/build.jl")
-    export createScenario
     using CxxWrap
     # Define a function that returns the library path
     function get_libGenSC_path()
@@ -21,5 +20,7 @@ module GeoRequestSimulator
         StringInstance = city * "_C_" * string(nb_bu_large) * "_" * string(district_size) * "_" * string(nb_scenario)
         SCmain(StringInstance, "data/", "Scenario/output")
     end
+
+    export createScenario
 
 end
