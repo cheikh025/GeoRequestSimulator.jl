@@ -1,6 +1,6 @@
 module GeoRequestSimulator
 
-    include("deps/build.jl")
+    include("../deps/build.jl")
     export createScenario
     using CxxWrap
     # Define a function that returns the library path
