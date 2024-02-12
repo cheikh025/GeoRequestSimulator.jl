@@ -145,14 +145,14 @@ void Params::exportBlockScenarios(string outputFolderPath)
 
 				string instanceName = cityName + "_" + depotPosition + "_" + to_string(instanceSize) + "_" + to_string(targetSizeOfDistrict);
 
-				string cityName = outputFolderPath + instanceName + ".json";
+				string cityName = "Scenario/output/" + instanceName + ".json";
 				// Check if the directory exists, and create it if it doesn't
 				std::filesystem::path outputPath(cityName);
-				std::filesystem::path outputDir = outputPath.parent_path();
-				std::cout << "Output directory:    " << "outputDir "<< std::endl;
-				if (!std::filesystem::exists(outputPath.parent_path())) {
-						std::filesystem::create_directories(outputPath.parent_path());
-					}
+				//std::filesystem::path outputDir = outputPath.parent_path();
+				//
+				//if (!std::filesystem::exists(outputPath.parent_path())) {
+				//		std::filesystem::create_directories(outputPath.parent_path());
+				//	}
 				ofstream myfile;
 					myfile.open(cityName);
 					if (myfile.is_open())
