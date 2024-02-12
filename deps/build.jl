@@ -19,5 +19,5 @@ end
 
 # Only run the build script if the library has not been built yet
 if !isfile(joinpath(build_dir, "libGenerateScenario.so"))
-    run_build_script()
+    #run_build_script()
 end
