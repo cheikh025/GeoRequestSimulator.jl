@@ -103,6 +103,7 @@ void Params::readBlocksJSON()
 }
 void Params::exportBlockScenarios(string outputFolderPath)
 {
+		std::cout << "Exporting block scenarios to " << outputFolderPath << std::endl;
 		vector<Block> currentBlocks = vector<Block> (blocks);
 		currentBlocks.resize(instanceSize);
 
@@ -147,6 +148,8 @@ void Params::exportBlockScenarios(string outputFolderPath)
 				string cityName = outputFolderPath + instanceName + ".json";
 				// Check if the directory exists, and create it if it doesn't
 				std::filesystem::path outputPath(cityName);
+				std::filesystem::path outputDir = outputPath.parent_path();
+				std::cout << "Output directory:    " << "outputDir "<< std::endl;
 				if (!std::filesystem::exists(outputPath.parent_path())) {
 						std::filesystem::create_directories(outputPath.parent_path());
 					}
