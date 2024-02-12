@@ -1,6 +1,6 @@
 module GeoRequestSimulator
 
-    include("deps/build.jl")
+    include("../deps/build.jl")
     include("utils.jl")
     using .CppScenario: SCmain
     
