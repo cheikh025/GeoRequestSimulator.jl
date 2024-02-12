@@ -1,5 +1,5 @@
-module CppScnario
-using CxxWrap
+module CppScenario
+    using CxxWrap
     # Define a function that returns the library path
     function get_libGenSC_path()
         script_dir = @__DIR__
