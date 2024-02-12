@@ -7,7 +7,7 @@ module GeoRequestSimulator
         script_dir = @__DIR__
         return joinpath(script_dir, "../deps/cpp/build/libGenerateScenario.so")
     end
-    @wrapmodule(get_libGenSC_path)
+    CxxWrap.wrapmodule(get_libGenSC_path)
 
 
     function createScenario(city, depot_location, nb_bu_large, district_size, nb_scenario)
@@ -22,6 +22,6 @@ module GeoRequestSimulator
     end
 
     export createScenario
-    
+
 
 end
