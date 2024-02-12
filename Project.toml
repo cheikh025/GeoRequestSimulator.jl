@@ -3,6 +3,9 @@ uuid = "aebb6fd8-4066-410e-987c-a34f476c5ce8"
 authors = ["Cheikh Ahmed"]
 version = "1.0.0-DEV"
 
+[deps]
+CxxWrap = "1f15a43c-97ca-5a2a-ae31-89f07a497df4"
+
 [compat]
 julia = "1"
 
