@@ -1,3 +1,4 @@
+include("../deps/build.jl")
 using GeoRequestSimulator
 using Test
 
