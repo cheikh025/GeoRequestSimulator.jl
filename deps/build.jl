@@ -1,6 +1,5 @@
 using CxxWrap
 prefix_path = CxxWrap.prefix_path()
-print(prefix_path)
 project_dir = @__DIR__ 
 cpp_dir = joinpath(project_dir, "cpp")
 build_dir = joinpath(cpp_dir, "build")
