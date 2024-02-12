@@ -13,8 +13,6 @@ add_library(GenerateScenario SHARED
     main.cpp
 )
 
-# Set the C++ standard to C++14
-target_compile_features(GenerateScenario PUBLIC cxx_std_17)
 # Include directories
 target_include_directories(GenerateScenario PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
